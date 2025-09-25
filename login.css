@@ -18,7 +18,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(32, 2, 59, 0.5), rgba(0, 0, 0, 0.63));
+    background: linear-gradient(to bottom, #0c0c2c75, rgba(0, 0, 0, 0.63));
     z-index: -1;
     /* Ensure the overlay is behind the content */
 }
@@ -103,40 +103,16 @@ body::before {
     letter-spacing: 5px;
 }
 
-.input-group {
-  position: relative;
-  margin: 20px 0;
-  width: 100%;
-}
-
-.input-group input {
-  width: 100%;
-  padding: 10px 5px;
-  border: none;
-  border-radius: none;
-  border-bottom: 2px solid #333;
-  background: transparent;
-  outline: none;
-  font-size: 16px;
-  color: #000;
-  display: block;
-}
-
-.input-group label {
-  position: absolute;
-  left: 5px;
-  top: 10px;
-  color: #666;
-  font-size: 16px;
-  pointer-events: none;
-  transition: 0.3s ease all;
-}
-
-.input-group input:focus ~ label,
-.input-group input:not(:placeholder-shown) ~ label {
-  top: -10px;
-  font-size: 12px;
-  color: #6200ea; /* accent color (purple) */
+input {
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 18px;
+    background-color: rgba(4, 2, 29, 0.507);
+    color: white;
+    outline: none;
 }
 
 .loginForm button {

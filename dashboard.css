@@ -72,7 +72,7 @@ body::before {
     right: 10px;
     position: fixed;
     display: inline-flex;
-    align-items: right; 
+    align-items: right;
     justify-content: right;
     gap: -30px;
 
@@ -194,9 +194,12 @@ a {
     padding: 10px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    overflow-y: auto; /* Enable vertical scroll */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    overflow-y: auto;
+    /* Enable vertical scroll */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
 }
 
 /* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge) */
@@ -215,7 +218,8 @@ a {
     color: white;
     transition: transform 300ms ease, box-shadow 300ms ease;
 }
-.card-img-top{
+
+.card-img-top {
     width: 180px;
     border-radius: 15px;
 }
@@ -227,6 +231,7 @@ a {
     margin-top: 10px;
     transform: translateY(-10px);
 }
+
 /* MIDDLE BOX */
 
 .middle {
@@ -237,7 +242,7 @@ a {
     grid-row-start: 1;
     background-color: rgba(12, 12, 44, 0.459);
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
@@ -278,13 +283,13 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #04021d3a,  #02010f 80%);
+    background: linear-gradient(to bottom, #04021d3a, #02010f 80%);
     z-index: 1;
 }
 
 .carousel-item .carousel-caption {
     position: absolute;
-    bottom: 80px;
+    bottom: 130px;
     left: 20px;
     z-index: 2;
     text-align: left;
@@ -300,4 +305,32 @@ a {
     color: whitesmoke;
     font-weight: 600;
 
+}
+
+
+.btn {
+    background-color: #121120;
+    border-radius: 50px;
+    color: white;
+    margin-left: 10px;
+}
+
+/* list */
+.card-list {
+    flex: 0 0 auto;
+    width: 120px;
+    /* make card narrower */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.card-img-list {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
 }

@@ -41,7 +41,7 @@ body::before {
     border-radius: 25px;
     padding: 0 20px;
     font-size: 18px;
-    background-color: rgba(4, 2, 29, 0.507);
+    background-color: #04021d81;
     color: white;
     outline: none;
 }
@@ -68,14 +68,71 @@ body::before {
 
 }
 
-.github {
+.option {
+    right: 10px;
     position: fixed;
+    display: inline-flex;
+    align-items: right; 
+    justify-content: right;
+    gap: -30px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.settings {
+    position: relative;
     display: flex;
     align-items: center;
-    margin-right: 5px;
     right: 20px;
     height: 45px;
     width: 45px;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: rgba(4, 2, 29, 0.507);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.settings:hover {
+    width: 150px;
+    border-radius: 50px;
+    background-color: rgb(129, 63, 33);
+    transform: scale(1.1);
+    content: "View on GitHub";
+    box-shadow: inset 0 0 12px rgba(255, 109, 11, 0.6),
+        0 0 6px rgba(255, 80, 11, 0.4);
+
+
+}
+
+.settings::after {
+    content: "Settings";
+    font-size: 12px;
+    opacity: 0;
+    margin-left: 8px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, opacity 0.1s ease-out;
+}
+
+.settings:hover::after {
+    opacity: 1;
+}
+
+/* ------------------------- */
+
+.github {
+    right: 20px;
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
     border: none;
     border-radius: 50%;
     padding: 8px;
@@ -137,8 +194,39 @@ body::before {
     padding: 10px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Enable vertical scroll */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
+/* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge) */
+.OnPlay::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 240px;
+    height: 340px;
+    background-color: rgba(2, 1, 19, 0.767);
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.card-img-top{
+    width: 180px;
+    border-radius: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transform: translateY(-10px);
+}
 /* MIDDLE BOX */
 
 .middle {
@@ -190,7 +278,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    background: linear-gradient(to bottom, #04021d3a,  #02010f 80%);
     z-index: 1;
 }
 

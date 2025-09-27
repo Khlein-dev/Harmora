@@ -210,7 +210,7 @@ a {
 .card {
     width: 240px;
     height: 340px;
-    background-color: rgba(2, 1, 19, 0.767);
+    background-color: #020113c4;
     border: none;
     border-radius: 15px;
     align-items: center;
@@ -317,20 +317,33 @@ a {
 
 /* list */
 .card-list {
-    flex: 0 0 auto;
-    width: 120px;
-    /* make card narrower */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left; 
     color: white;
+    background-color: #020113c4;
+    margin-bottom: -10px;
+    transition: background-color 300ms ease, transform 300ms ease;
 }
 
-.card-img-list {
-    width: 100px;
-    height: 100px;
+.card-list img {
+    width: 80px;   /* adjust size */
+    height: 80px;  /* adjust size */
     border-radius: 10px;
-    margin-bottom: 8px;
-    transition: transform 300ms ease, box-shadow 300ms ease;
+    flex-shrink: 0; /* prevents image from shrinking */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-list:hover {
+    background-color: #121120;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -349,7 +349,7 @@ a {
     transition: 300ms ease-in-out;
 }
 
-.card-list :hover .play{
+.col :hover .play{
     display: block;
     position: absolute;
     transition: 300ms ease-in-out;
@@ -388,4 +388,13 @@ a {
     transition: background-color 300ms ease, transform 300ms ease;
 
 }
+
+footer{
+    position: absolute;
+    bottom: -12px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.753);
+}
+
 

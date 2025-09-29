@@ -351,7 +351,23 @@ a {
 
 .card-list :hover .play{
     display: block;
+    position: absolute;
     transition: 300ms ease-in-out;
+    right: 10px;
+    transform: translateY(-10px);
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
 }
 
 

@@ -1,145 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Edu+SA+Hand:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
-
- 
 body {
-    background-image: url('pics/login_bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    background-color: #020216;
     color: white;
-    margin: 30px;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #0c0c2c75, rgba(0, 0, 0, 0.63));
-    z-index: -1;
-    /* Ensure the overlay is behind the content */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    gap: 8px;
 }
 
-.card {
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent background */
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 900px;
-    max-width: 900px;
-    height: 550px;
-    margin: auto;
+
+.cover {
+    background-image: url(pics/m3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 90%;
-        height: auto;
-        right: 0;
-        align-items: center;
-
-    }
-}
-
-.carousel {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 480px;
-}
-
-.carousel-item {
-    position: relative;
-    /* make container a positioning context */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
-}
-
-.carousel-item::before {
+.cover::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(32, 2, 59, 0.5), rgb(0, 0, 0));
+    background: linear-gradient(to right, #02021600 10%, #020216e3 30%, #020216ee 60%, #020216 90%, #020216 100%);
     z-index: 1;
 }
 
-.carousel-item .carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
     z-index: 2;
-    text-align: left;
+}
+
+.card {
+    background-color: #0c0c2c75;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 500px;
+    backdrop-filter: blur(10px);
     color: white;
+    transition: 700ms ease-in-out;
+}
+
+.card:hover {
+    background-color: #0d0d3175;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    transition: 700ms ease-in-out;
+}
+
+.form-control{
+    width: 100%;
     padding: 10px;
-    border-radius: 5px;
-    font-size: 32px;
-    line-height: 32px;
-}
-
-
-.carousel-caption {
-    color: whitesmoke;
-    font-weight: 600;
-
-}
-
-.loginForm {
-    text-align: left;
-    padding: 1px;
-    color: whitesmoke;
-    font-weight: 600;
-    font-family: Oswald, sans-serif;
-    letter-spacing: 5px;
-}
-
-input {
-    width: 60%;
-    height: 40px;
+    margin: 10px 0;
     border: none;
-    border-radius: 25px;
-    padding: 0 20px;
-    font-size: 18px;
-    background-color: rgba(4, 2, 29, 0.507);
+    border-radius: 50px;
+    background-color: #020216;
     color: white;
-    outline: none;
+    font-size: 16px;
 }
 
-.loginForm button {
+a{
+    color: #4a4a80;
+    text-decoration: none;
+    transition: 600ms ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #6b6bb3;
+}
+
+.btn {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #6200ea; /* accent color (purple) */
+    border-radius: 50px;
+    background-color: #111144;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 300ms ease;
 }
 
-.loginForm button:hover {
-    background-color: #4500b5; /* darker shade on hover */
-}
-
-.signin {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-    color: #ccc;
-}
-
-.signin a {
-    color: #6200ea; /* accent color (purple) */
-    text-decoration: none;
-    font-weight: 600;
+.btn:hover {
+    background-color: #4a4a80;
+    transition: 300ms ease-in-out;
 }

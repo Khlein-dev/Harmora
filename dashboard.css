@@ -432,3 +432,38 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
+
+
+.cover{
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#LANA img{
+    height: 350px;
+    width: 100%;
+    border-radius: 12px 12px 0 0; 
+    
+}
+
+#LANA img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #04021d3a, #02010f);
+    z-index: 1;
+}
+
+.coverPhoto{
+    border-radius: 15px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}

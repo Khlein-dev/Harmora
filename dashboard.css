@@ -442,14 +442,16 @@ footer {
     object-position: top;
 }
 
-#LANA img{
-    height: 350px;
+.tip{
+    height: 210px;
     width: 100%;
-    border-radius: 12px 12px 0 0; 
+    border-radius: 12px 12px 0 0;
+    object-fit: cover; 
+    object-position: top;
     
 }
 
-#LANA img::after{
+.tip::after{
     content: "";
     position: absolute;
     top: 0;

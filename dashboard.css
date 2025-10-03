@@ -191,7 +191,7 @@ a {
     grid-row-start: 1;
     background-color: #0c0c2c75;
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     overflow-x: hidden;
@@ -200,6 +200,7 @@ a {
     /* Enable vertical scroll */
     scrollbar-width: none;
     /* Hide scrollbar in Firefox */
+
 }
 
 /* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge) */

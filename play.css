@@ -31,6 +31,7 @@ body::before {
     -webkit-backdrop-filter: blur(10px);
     display: inline-flex;
     align-items: center;
+    z-index: 1;
 
 }
 
@@ -175,4 +176,17 @@ footer {
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.753);
+}
+
+
+/* --------------------------------------------------- */
+
+.COVER {
+    background-image: url(pics/lanaCov.webp);
+    background-repeat: no-repeat;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 800vh;
+    z-index: 0;
 }

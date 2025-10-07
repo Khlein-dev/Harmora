@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HARMORA</title>
+    <link rel="shortcut icon" href="pics/logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="play.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="search">
+        <img src="pics/logo.png" alt="logo" width="85" height="85">
+        <a href="index.html">
+            <div class="circle" style="margin-right: 10px;">
+                <img src="pics/logout.png" alt="Search" width="20" height="20"
+                    style="align-items: center; translate: -7px; transform: translateY(6px);">
+            </div>
+        </a>
+        <input type="text" class="searchTerm" placeholder="Search...">
+        <button type="submit" class="searchButton">
+            <img src="pics/magnifying-glass.png" alt="Search" width="20" height="20"
+                style="align-items: center; translate: -7px; transform: translateY(-2px);">
+        </button>
+
+        <div class="option">
+            <a href="" target="_blank">
+                <div class="settings">
+                    <img src="pics/settings.png" width="35"
+                        style="align-items: center; translate: -2px; transform: translateY(-1px);">
+                </div>
+            </a>
+
+            <a href="https://github.com/Khlein-dev/Harmora" target="_blank">
+                <div class="github">
+                    <img src="pics/github.png" width="35"
+                        style="align-items: center; translate: -2px; transform: translateY(-1px);">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="COVER">
+
+    </div>
+
+
+    <footer>
+        <center>
+            <p>&copy; 2025 HARMORA. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

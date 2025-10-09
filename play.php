@@ -14,7 +14,12 @@
 
 <body>
 
+    <div class="COVER" style="background-image: url('pics/LanaBanner.webp');">
+
+    </div>
+
     <!-- TOP BAR -->
+
     <div class="search">
         <img src="pics/logo.png" alt="logo" width="85" height="85">
         <a href="index.html">
@@ -46,9 +51,19 @@
         </div>
     </div>
 
-    <div class="COVER">
+    <!-- SONG -->
+    <center>
+        <div class="card" style="width: 20rem;">
+            <img src="pics/borntodie.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h1 style="color: white; letter-spacing: 2px;">Born to Die</h1>
+                <p class="card-text">Lana Del Rey</p>
+            </div>
+        </div>
+    </center>
 
-    </div>
+
+
 
 
     <footer>

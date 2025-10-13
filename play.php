@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="COVER" style="background-image: url('pics/LanaBanner.webp');">
+    <div class="COVER" style="background-image: url('pics/eminemBanner.jpg');">
 
     </div>
 
@@ -54,13 +54,36 @@
     <!-- SONG -->
     <center>
         <div class="card" style="width: 20rem;">
-            <img src="pics/borntodie.png" class="card-img-top" alt="...">
+            <img src="pics/superman.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h1 style="color: white; letter-spacing: 2px;">Born to Die</h1>
-                <p class="card-text">Lana Del Rey</p>
+                <h1 style="color: white; letter-spacing: 2px;">superman</h1>
+                <p class="card-text">Eminem</p>
             </div>
         </div>
     </center>
+
+    <!-- LYRICS & ARTIST -->
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card" style="height: 600px;">
+                    <div class="file-text">
+                        <h1>EMINEM</h1>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="file" style="background-image: url('pics/eminem.jpg');">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

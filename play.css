@@ -4,6 +4,7 @@ body {
     height: 100vh;
     transition: 800ms ease-in-out;
     overflow-x: hidden;
+    color: white;
 }
 
 body::before {
@@ -182,7 +183,7 @@ footer {
 /* --------------------------------------------------- */
 
 .COVER {
-    
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -208,13 +209,13 @@ footer {
 
 /* SONG */
 
-.card{
+.card {
     background: none;
     transform: translateY(-200px);
 
 }
 
-.file-text{
+.file-text {
     width: 500px;
     height: 600px;
     background-color: #0c0c2c75;
@@ -230,7 +231,7 @@ footer {
     color: white;
 }
 
-.file-text h1{
+.file-text h1 {
     color: white;
 }
 
@@ -238,7 +239,7 @@ footer {
     color: white;
 }
 
-.file{
+.file {
     background-size: cover;
     background-position: center;
     background-position: top;
@@ -248,10 +249,15 @@ footer {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
 }
 
 
-.file::before{
+.file::before {
     content: "";
     position: absolute;
     top: 0;
@@ -260,4 +266,25 @@ footer {
     height: 100%;
     background: linear-gradient(to bottom, #01010a4e, #000107);
     z-index: 1;
+}
+
+.file h1 {
+    color: white;
+    z-index: 2;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.file p {
+    color: white;
+    z-index: 2;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: justify;
+    z-index: 3;
 }

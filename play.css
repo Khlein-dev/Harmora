@@ -288,3 +288,34 @@ footer {
     text-align: justify;
     z-index: 3;
 }
+
+.play-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0c0c2c75;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 300ms ease, transform 300ms ease;
+    z-index: 10;
+    object-fit: cover;
+}
+
+.play-button:hover {
+    background-color: #333366aa;
+    transform: translateX(-50%) scale(1.1);
+}
+
+.play-button img {
+    width: 60px;
+    height: 60px;
+    transform: translateY(20px);
+    translate: 25px;
+}

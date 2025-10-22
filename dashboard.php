@@ -116,58 +116,69 @@
 
             <!-- navigation -->
             <div class="d-grid gap-5 d-md-block" style="margin-top: 20px; gap: 20px; color: rgb(73, 70, 70);">
-                <button class="btn" type="button"> <img src="pics/music-note.png"
-                        style="width: 20px; margin-right: 5px;">Songs</button>
-                <button class="btn" type="button"> <img src="pics/microphone.png"
-                        style="width: 20px; margin-right: 5px;">Artists</button>
-                <button class="btn" type="button"> <img src="pics/vinyl.png"
-                        style="width: 20px; margin-right: 5px;">Albums</button>
+                <a href="#songs"><button class="btn" type="button"> <img src="pics/music-note.png"
+                            style="width: 20px; margin-right: 5px;">Songs</button></a>
+                <a href="#artists"><button class="btn" type="button"> <img src="pics/microphone.png"
+                            style="width: 20px; margin-right: 5px;">Artists</button></a>
+                <a href="#albums"><button class="btn" type="button"> <img src="pics/vinyl.png"
+                            style="width: 20px; margin-right: 5px;">Albums</button></a>
             </div>
 
-            <p class="h1" style="margin-top: 18px; color: white;">TRENDING</p>
+            <p class="h1" style="margin-top: 18px; color: white;"  id="songs">TRENDING</p>
 
             <hr style="height: 2px; background-color: white; border: none; border-radius: 5px;">
 
             <div class="container text-center" style="margin-top: 20px;">
                 <div class="row">
                     <div class="col">
-                        <div class="card-list">
-                            <img src="pics/Everything.png" class="card-img-list" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Everything</h5>
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Ariana Grande</p>
-                                    <div class="play">
+                        <a href="EVERYTHINGplay.html">
+                            <div class="card-list">
+                                <img src="pics/Everything.png" class="card-img-list" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Everything</h5>
+                                    <div style="display: flex; align-items: center; justify-content: center;">
+                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Ariana Grande
+                                        </p>
+                                        <div class="play">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card-list">
-                            <img src="pics/HappierthanEver.png" class="card-img-list" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Happier than Ever</h5>
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Billie Eilish</p>
-                                    <div class="play">
+                        <a href="HAPPIERTHANEVERplay.html">
+                            <div class="card-list">
+                                <img src="pics/HappierthanEver.png" class="card-img-list" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Happier than Ever</h5>
+                                    <div style="display: flex; align-items: center; justify-content: center;">
+                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Billie Eilish
+                                        </p>
+                                        <div class="play">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="card-list">
-                            <img src="pics/letmeloveyou.jpeg" class="card-img-list" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Let me love you</h5>
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Justin Bieber</p>
-                                    <div class="play">
+                        <a href="LETMELOVEYOUplay.html">
+                            <div class="card-list">
+
+                                <img src="pics/letmeloveyou.jpeg" class="card-img-list" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Let me love you</h5>
+                                    <div style="display: flex; align-items: center; justify-content: center;">
+                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Justin Bieber
+                                        </p>
+                                        <div class="play">
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -175,53 +186,11 @@
             <div class="container text-center" style="margin-top: 20px;">
                 <div class="row">
                     <div class="col">
-                        <div class="card-list">
-                            <img src="pics/UnorthodoxJukebox.png" class="card-img-list" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Treasure</h5>
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Bruno Mars</p>
-                                    <div class="play">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-list">
-                            <img src="pics/pillowtalk.png" class="card-img-list" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pillowtalk</h5>
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Zayn Malik</p>
-                                    <div class="play">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-list">
-                            <img src="pics/perfect.jpg" class="card-img-list" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Perfect</h5>
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Ed Sheeran</p>
-                                    <div class="play">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container text-center" style="margin-top: 20px;">
-                    <div class="row">
-                        <div class="col">
+                        <a href="TREASUREplay.html">
                             <div class="card-list">
-                                <img src="pics/grenade.png" class="card-img-list" alt="...">
+                                <img src="pics/UnorthodoxJukebox.png" class="card-img-list" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Grenade</h5>
+                                    <h5 class="card-title">Treasure</h5>
                                     <div style="display: flex; align-items: center; justify-content: center;">
                                         <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Bruno Mars
                                         </p>
@@ -230,41 +199,102 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="PILLOWTALKplay.html">
                             <div class="card-list">
-                                <img src="pics/superman.jpg" class="card-img-list" alt="...">
+                                <img src="pics/pillowtalk.png" class="card-img-list" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Superman</h5>
+                                    <h5 class="card-title">Pillowtalk</h5>
                                     <div style="display: flex; align-items: center; justify-content: center;">
-                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Eminem</p>
-                                        <div class="play">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-list">
-                                <img src="pics/borntodie.png" class="card-img-list" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Born to Die</h5>
-                                    <div style="display: flex; align-items: center; justify-content: center;">
-                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Lana Del Rey
+                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Zayn Malik
                                         </p>
                                         <div class="play">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="PERFECTplay.html">
+                            <div class="card-list">
+                                <img src="pics/perfect.jpg" class="card-img-list" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Perfect</h5>
+                                    <div style="display: flex; align-items: center; justify-content: center;">
+                                        <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Ed Sheeran
+                                        </p>
+                                        <div class="play">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container text-center" style="margin-top: 20px;">
+                    <div class="row">
+                        <div class="col">
+                            <a href="GRENADEplay.html">
+                                <div class="card-list">
+                                    <img src="pics/grenade.png" class="card-img-list" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Grenade</h5>
+                                        <div style="display: flex; align-items: center; justify-content: center;">
+                                            <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Bruno
+                                                Mars
+                                            </p>
+                                            <div class="play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="play.html">
+                                <div class="card-list">
+                                    <img src="pics/superman.jpg" class="card-img-list" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Superman</h5>
+                                        <div style="display: flex; align-items: center; justify-content: center;">
+                                            <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Eminem
+                                            </p>
+                                            <div class="play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="BORNTODIEplay.html">
+                                <div class="card-list">
+                                    <img src="pics/borntodie.png" class="card-img-list" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Born to Die</h5>
+                                        <div style="display: flex; align-items: center; justify-content: center;">
+                                            <p class="card-text" style="margin: 0; flex: 1; text-align: left;">Lana Del
+                                                Rey
+                                            </p>
+                                            <div class="play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- ARTISTS -->
+            
 
-            <p class="h1" style="margin-top: 18px; color: white;">ARTISTS</p>
+            <p class="h1" style="margin-top: 18px; color: white;" id="artists">ARTISTS</p>
 
             <hr style="height: 2px; background-color: white; border: none; border-radius: 5px;">
 
@@ -349,7 +379,7 @@
             <!-- ALBUMSS -->
 
 
-            <p class="h1" style="margin-top: 18px; color: white;">ALBUMS</p>
+            <p class="h1" style="margin-top: 18px; color: white;"  id="albums">ALBUMS</p>
 
             <hr style="height: 2px; background-color: white; border: none; border-radius: 5px;">
 

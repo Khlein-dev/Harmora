@@ -246,7 +246,7 @@ a {
     padding: 15px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
+    scroll-behavior: smooth;
     overflow-y: auto;
     /* enable vertical scrolling */
     scrollbar-width: none;

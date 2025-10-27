@@ -294,28 +294,82 @@ footer {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #0c0c2c75;
     border: none;
-    border-radius: 50%;
-    width: 100px;
+    width: 500px;
     height: 100px;
-    color: white;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 300ms ease, transform 300ms ease;
     z-index: 10;
     object-fit: cover;
 }
 
 .play-button:hover {
-    background-color: #333366aa;
     transform: translateX(-50%) scale(1.1);
 }
 
-.play-button img {
-    width: 60px;
-    height: 60px;
-    transform: translateY(20px);
-    translate: 25px;
+audio {
+    width: 1000px;
+    height: 600px;
+    outline: none;
+    border-radius: 15px;
+    border: #000107 1px solid;
+}
+
+/* Main control panel */
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(135deg, #01010d 20%, #0a0a3a 100%);
+    border-radius: 15px;
+    border: 1px solid #1b1b4d;
+    box-shadow: 0 0 12px rgba(0, 20, 255, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+audio:hover::-webkit-media-controls-panel {
+    box-shadow: 0 0 20px rgba(0, 100, 255, 0.4);
+}
+
+/* Play button */
+audio::-webkit-media-controls-play-button {
+    background: radial-gradient(circle at center, #5353c6, #3243a3);
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 0;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background: radial-gradient(circle at center, #5353c6, #3243a3);
+    transform: scale(1.1);
+}
+
+/* Timeline and sliders */
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(0, 0, 30, 0.6);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+audio::-webkit-media-controls-timeline:hover,
+audio::-webkit-media-controls-volume-slider:hover {
+    background-color: rgba(113, 113, 203, 0.8);
+}
+
+/* Volume button */
+audio::-webkit-media-controls-mute-button {
+    background: radial-gradient(circle at center, #5353c6, #3243a3);
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+audio::-webkit-media-controls-mute-button:hover {
+    background: radial-gradient(circle at center, #0d0d6b, #00010d);
+    transform: scale(1.1);
+}
+
+/* Progress bar thumb (scrubber) */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #7aa8ff;
+    text-shadow: 0 0 3px #0040ff;
 }

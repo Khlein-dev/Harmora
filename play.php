@@ -14,14 +14,14 @@
 
 <body>
 
-    <div class="COVER" style="background-image: url('pics/eminemBanner.jpg');">
+    <div class="COVER" style="background-image: url('pics/justineBanner.jpg');">
 
     </div>
 
     <!-- TOP BAR -->
 
     <div class="search">
-        <img src="pics/logo.png" alt="logo" width="85" height="85">
+        <a href="dashboard.html"><img src="pics/logo.png" alt="logo" width="85" height="85"></a>
         <a href="index.html">
             <div class="circle" style="margin-right: 10px;">
                 <img src="pics/logout.png" alt="Search" width="20" height="20"
@@ -51,13 +51,20 @@
         </div>
     </div>
 
+    <!-- PLAY -->
+
+    <audio div class="play-button" id="borntodieSong" controls>
+        <source src="songs/DJ Snake - Let Me Love You ft. Justin Bieber [euCqAq6BRa4].mp3" type="audio/mpeg">
+    </audio>
+
+
     <!-- SONG -->
     <center>
         <div class="card" style="width: 20rem;">
-            <img src="pics/superman.jpg" class="card-img-top" alt="...">
+            <img src="pics/letmeloveyou.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h1 style="color: white; letter-spacing: 2px;">superman</h1>
-                <p class="card-text">Eminem</p>
+                <h1 style="color: white; letter-spacing: 2px;">Let me love you</h1>
+                <p class="card-text">Justine Bieber</p>
             </div>
         </div>
     </center>
@@ -69,16 +76,67 @@
             <div class="col-sm-8">
                 <div class="card" style="height: 600px;">
                     <div class="file-text">
-                        <h1>EMINEM</h1>
+                        <h1>Lyrics</h1>
                         <hr>
+                        <p
+                            style="text-align: left; padding: 10px; font-size: 18px; line-height: 1.6; text-align: justify;">
+                            I used to believe
+                            We were burnin' on the edge of somethin' beautiful
+                            Somethin' beautiful
+                            Sellin' a dream
+                            Smoke and mirrors keep us waitin' on a miracle
+                            On a miracle
+                            <br><br>
+                            Say, go through the darkest of days
+                            Heaven's a heartbreak away
+                            Never let you go, never let me down
+                            Oh, it's been a hell of a ride
+                            Driving the edge of a knife
+                            Never let you go, never let me down
+                            <br><br>
+                            Don't you give up, nah, nah, nah
+                            I won't give up, nah, nah, nah
+                            Let me love you
+                            Let me love you
+                            Don't you give up, nah, nah, nah
+                            I won't give up, nah, nah, nah
+                            Let me love you
+                            Let me love you
+                            (Oh, baby, baby)
+
+                        </p>
 
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="card">
-                    <div class="file" style="background-image: url('pics/eminem.jpg');">
-                        
+                    <div class="file" style="background-image: url('pics/JustineFile.webp');">
+                        <div class="row row-cols-1 row-cols-md-3 g-4"
+                            style="transform: translateY(180px); z-index: 4; padding: 5px;">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="pics/letmeloveyou.jpeg" class="card-img-top"
+                                        style="border-radius: 10px ;">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="pics/HappierthanEver.png" class="card-img-top"
+                                        style="border-radius: 10px ;">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="pics/pillowtalk.png" class="card-img-top" style="border-radius: 10px ;">
+                                </div>
+                            </div>
+                        </div>
+                        <p>A Canadian pop sensation who rose to fame as a teenager through YouTube, known for early hits
+                            like “Baby” and later mature tracks such as “Sorry,” “Peaches,” and “Ghost.” Over the years,
+                            he has evolved from teen idol to a versatile artist balancing pop, R&B, and soul influences.
+                        </p>
+                        <h1>Justine Bieber</h1>
                     </div>
                 </div>
             </div>
@@ -96,7 +154,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="play.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
